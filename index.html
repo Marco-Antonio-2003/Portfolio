@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Marco Antônio M. de A. Barros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Marco Antônio</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Home -->
+        <section id="home">
+            <div class="container">
+                <h1>Marco Antônio M. de A. Barros</h1>
+                <h2>Desenvolvedor de Software</h2>
+                <p class="intro-text">
+                    Apaixonado por criar sistemas completos e eficientes. Meu foco é o desenvolvimento de aplicações desktop e web com Python, automação de processos e integração de sistemas. Explore meus projetos e vamos construir algo incrível juntos!
+                </p>
+                <div class="home-buttons">
+                    <a href="https://drive.google.com/file/d/118_eQeBqyQ0iBqHELsCk9y9q3-WYE8xb/view?usp=drive_link" target="_blank" class="btn btn-primary">Ver Currículo</a>
+                    <a href="#contato" class="btn btn-secondary">Contato</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/marco-antônio-73a6472a4/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Marco-Antonio-2003" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="sobre">
+            <div class="container">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Desde o início da minha jornada na tecnologia, sou movido pela curiosidade e pelo desafio de criar soluções que simplificam a vida das pessoas. Com experiência prática no desenvolvimento de projetos e automação de processos usando Python e SQL, aprendi a importância de um código limpo e eficiente.
+                    <br><br>
+                    Atualmente, finalizando Análise e Desenvolvimento de Sistemas e cursando Ciência de Dados, meu objetivo é unir a engenharia de software com a análise de dados para construir sistemas inteligentes, capazes de gerar insights valiosos e otimizar operações.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section id="projetos">
+            <div class="container">
+                <h2>Projetos em Destaque</h2>
+                
+                <div class="projeto-principal">
+                    <div class="projeto-titulo">
+                        <h3>MB Sistema - Sistema de Gerenciamento</h3>
+                        <a href="https://github.com/Marco-Antonio-2003/Sistema-de-Gerenciamento-de-Mercado" target="_blank" class="github-link" aria-label="Ver no GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                    <p class="projeto-descricao">
+                        Solução de software desktop completa em Python para otimizar a gestão de pequenas e médias empresas, integrando PDV, controle de estoque e relatórios.
+                    </p>
+                    <div class="tecnologias">
+                        <span>Python</span><span>SQL</span><span>API (Mercado Livre)</span><span>API (DeepSeek)</span>
+                    </div>
+
+                    <div class="galeria-grid">
+                        <div class="galeria-item"><img src="images/principal.PNG" alt="Dashboard Principal"><div class="zoom-overlay"><i class="fas fa-plus"></i></div><div class="item-info"><h4>Dashboard Principal</h4><p>Visão geral com acesso rápido ao PDV e indicadores chave.</p></div></div>
+                        <div class="galeria-item"><img src="images/PDV.PNG" alt="Ponto de Venda"><div class="zoom-overlay"><i class="fas fa-plus"></i></div><div class="item-info"><h4>Ponto de Venda (PDV)</h4><p>Interface ágil para registro de produtos e finalização de vendas.</p></div></div>
+                        <div class="galeria-item"><img src="images/mercado_livre.PNG" alt="Integração Mercado Livre"><div class="zoom-overlay"><i class="fas fa-plus"></i></div><div class="item-info"><h4>Integração E-commerce</h4><p>Sincronização de estoque e dashboard de vendas do Mercado Livre.</p></div></div>
+                        <div class="galeria-item"><img src="images/relatorio_vendas.PNG" alt="Relatórios"><div class="zoom-overlay"><i class="fas fa-plus"></i></div><div class="item-info"><h4>Relatórios e Análise</h4><p>Geração de relatórios com filtros e gráficos visuais para apoiar decisões.</p></div></div>
+                        <div class="galeria-item"><img src="images/produtos.PNG" alt="Gestão de Produtos"><div class="zoom-overlay"><i class="fas fa-plus"></i></div><div class="item-info"><h4>Gestão de Produtos</h4><p>Gerenciamento completo do catálogo de produtos e controle de estoque.</p></div></div>
+                        <div class="galeria-item"><img src="images/chat bot.PNG" alt="Assistente com IA"><div class="zoom-overlay"><i class="fas fa-plus"></i></div><div class="item-info"><h4>Assistente com IA</h4><p>Chatbot integrado à API da DeepSeek que responde dúvidas e auxilia usuários.</p></div></div>
+                    </div>
+                    <button id="ver-mais-btn" class="btn btn-secondary">Ver mais imagens</button>
+                </div>
+
+                <div class="outros-projetos">
+                    <h3>Outros Projetos</h3>
+                    <div class="outros-projetos-grid">
+                        <div class="projeto-secundario"><h4>Email Automático<a href="https://github.com/Marco-Antonio-2003/email-automatico-com-pyautogui" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h4><p>Solução em Python e PyAutoGUI para automação de envio de 100+ emails diários.</p></div>
+                        <div class="projeto-secundario"><h4>Site de Aluguel de Carros<a href="https://github.com/Marco-Antonio-2003/projeto-do-curso" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h4><p>Plataforma full-stack em PHP e MySQL com cadastro e reserva de veículos.</p></div>
+                        <div class="projeto-secundario"><h4>Alura Space<a href="https://github.com/Marco-Antonio-2003/projeto-django" target="_blank" class="github-link"><i class="fab fa-github"></i></a></h4><p>Sistema CRUD em Django e AWS S3 para gerenciamento de imagens com autenticação.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div class="container"><h2>Habilidades Técnicas</h2><div class="habilidades-grid"><div class="skill-category"><h4>Linguagens</h4><ul><li>Python</li><li>PHP</li><li>JavaScript</li><li>HTML/CSS</li><li>SQL</li></ul></div><div class="skill-category"><h4>Frameworks</h4><ul><li>Django</li><li>Bootstrap</li><li>React JS</li></ul></div><div class="skill-category"><h4>Bancos de Dados</h4><ul><li>MySQL</li><li>Firebird</li><li>MongoDB</li></ul></div><div class="skill-category"><h4>Ferramentas e Cloud</h4><ul><li>Git & GitHub</li><li>AWS S3</li><li>Google Cloud</li><li>Integração de APIs</li></ul></div></div></div>
+        </section>
+        <section id="contato">
+            <div class="container"><h2>Vamos Conversar!</h2><p>Estou em busca de novos desafios e oportunidades para crescer. Entre em contato!</p><ul><li><i class="fas fa-envelope"></i> <a href="mailto:marcoabreubarros@gmail.com">marcoabreubarros@gmail.com</a></li><li><i class="fas fa-phone"></i> <a href="tel:+5515996125218">(15) 99612-5218</a></li><li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/marco-antônio-73a6472a4/" target="_blank">LinkedIn</a></li></ul></div>
+        </section>
+    </main>
+
+    <footer><div class="container"><p>© 2024 Marco Antônio M. de A. Barros. Todos os direitos reservados.</p></div></footer>
+
+    <div id="lightbox"><span class="close-lightbox">×</span><img id="lightbox-img" src="" alt="Imagem em destaque"></div>
+
+    <div id="gallery-lightbox">
+        <div class="gallery-lightbox-content">
+            <span class="close-gallery-lightbox">×</span>
+            <h3>Mais Imagens do Projeto</h3>
+            <div class="gallery-lightbox-grid">
+                <!-- ESTRUTURA ATUALIZADA AQUI -->
+                <div class="gallery-lightbox-item"><img src="images/login.PNG" alt="Tela de Login"><div class="zoom-overlay"><i class="fas fa-plus"></i></div></div>
+                <div class="gallery-lightbox-item"><img src="images/clientes.PNG" alt="Cadastro de Clientes"><div class="zoom-overlay"><i class="fas fa-plus"></i></div></div>
+                <div class="gallery-lightbox-item"><img src="images/historico de vendas.PNG" alt="Histórico de Vendas"><div class="zoom-overlay"><i class="fas fa-plus"></i></div></div>
+                <div class="gallery-lightbox-item"><img src="images/controle_funcionario.PNG" alt="Controle de Funcionários"><div class="zoom-overlay"><i class="fas fa-plus"></i></div></div>
+                <div class="gallery-lightbox-item"><img src="images/sinc_estoque_mercado_livre.PNG" alt="Sincronização de Estoque"><div class="zoom-overlay"><i class="fas fa-plus"></i></div></div>
+                <div class="gallery-lightbox-item"><img src="images/venda_finalizada_PDV.PNG" alt="Venda Finalizada"><div class="zoom-overlay"><i class="fas fa-plus"></i></div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
