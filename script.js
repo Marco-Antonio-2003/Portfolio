@@ -1,21 +1,41 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // --- LÓGICA DE NAVEGAÇÃO ATIVA ---
-    const navLinks = document.querySelectorAll('nav a');
+    const navScrollLinks = document.querySelectorAll('nav a[href^="#"]');
     const sections = document.querySelectorAll('main section[id]');
 
     function changeActiveLink() {
         let index = sections.length;
         while(--index && window.scrollY + 100 < sections[index].offsetTop) {}
-        navLinks.forEach((link) => link.classList.remove('active'));
-        if(navLinks[index]) {
-            navLinks[index].classList.add('active');
+        navScrollLinks.forEach((link) => link.classList.remove('active'));
+        if(navScrollLinks[index]) {
+            navScrollLinks[index].classList.add('active');
         }
     }
     changeActiveLink();
     window.addEventListener('scroll', changeActiveLink);
 
-    // --- LÓGICA DO MODAL 1: ZOOM DE IMAGEM ÚNICA (AGORA GENÉRICO) ---
+    // --- LÓGICA DO MENU HAMBÚRGUER ---
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.querySelector('header nav');
+    const navMenuLinks = document.querySelectorAll('nav ul a');
+
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    }
+    
+    // CORREÇÃO: Fecha o menu ao clicar em um link
+    navMenuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+        });
+    });
+
+    // --- LÓGICA DO MODAL 1: ZOOM DE IMAGEM ÚNICA (GENÉRICO) ---
     const zoomOverlays = document.querySelectorAll('.zoom-overlay');
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
@@ -23,7 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     zoomOverlays.forEach(item => {
         item.addEventListener('click', (event) => {
-            // Pega a imagem que é irmã do overlay ou está dentro do mesmo container
             const imageElement = event.currentTarget.parentElement.querySelector('img');
             if (imageElement) {
                 const imgSrc = imageElement.getAttribute('src');
